@@ -19,7 +19,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
-
+    <script src="./js/myScripts.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWrmiUK71YNfE0yig_mfvwTbLVdX6_ZdY&callback=initMap">
+    </script>
   </head>
 
   <body>
@@ -49,15 +52,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           
           <ul class="navbar-nav ml-auto">
+
             <li class="nav-item">
-              <i class="fa fa-facebook-official nav-link" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.facebook.com/Wahizza/">
+                <i class="fa fa-facebook-official nav-link" aria-hidden="true"></i>
+              </a>
             </li>
+            
             <li class="nav-item">
-              <i class="fa fa-instagram nav-link" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.facebook.com/Wahizza/">
+                <i class="fa fa-instagram nav-link" aria-hidden="true"></i>
+              </a>
             </li>
+            
             <li class="nav-item">
-              <i class="fa fa-yelp nav-link" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.facebook.com/Wahizza/">
+                <i class="fa fa-yelp nav-link" aria-hidden="true"></i>
+              </a>
             </li>
+
           </ul>
         
         </div>
@@ -94,13 +107,11 @@
           <div class="col-lg-5 ml-auto">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-            <h2 class="section-heading">Pizza made<br>Wahizza</h2>
-            <p class="lead">A special thanks to
-              <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>
-              for providing the photographs that you see in this template. Visit their website to become a member.</p>
+            <h2 class="section-heading">Pizza made excellent</h2>
+            <p class="lead text-justify text-secondary">We are commited to freshness and quality of our food just to make you happy. Home of the world famous Chimi Pizza, even celebrities come here to have a little taste of joy.</p>
           </div>
           <div class="col-lg-5 mr-auto">
-            <img class="img-fluid" src="img/ipad.png" alt="">
+            <img class="img-fluid" src="./resources/img/soda-img.jpg" alt="">
           </div>
         </div>
 
@@ -112,17 +123,133 @@
 
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-5 mr-auto order-lg-2">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-            <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by
-              <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+        <div class="text-center">
+          <img src="./resources/img/menu-banner.svg" alt="Our Menu" height="70%" width="70%">
+          <!-- <hr size="15%"> -->
+        </div>
+        <div class="row text-center">
+          
+          <!-- PIZZAS -->
+          <div class="col">
+            <!-- Pepperoni -->
+            <div class="row text-center">
+              <div class="col">
+                <img src="./resources/img/menu-pizza.png" width="90%" height="90%">
+              </div>
+              <!-- Pizza description -->
+              <div class="col align-self-center text-left">
+                <div class="list-inline">
+                  <h5 class="list-inline-item text-warning">Pepperoni</h5> 
+                  <h6 class="list-inline-item text-secondary">$15</h6>
+                </div>
+                 <div class="text-justify text-secondary">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet metus sit amet nisi finibus,
+                </div>
+              </div> 
+
+            </div>
+            
+          <!-- Margarita -->
+          <div class="row text-center">
+              
+              <div class="col">
+                <img src="./resources/img/menu-pizza.png" width="90%" height="90%">
+              </div>
+              <div class="col align-self-center text-left">
+                <div class="list-inline">
+                  <h5 class="list-inline-item text-warning">Margarita</h5> 
+                  <h6 class="list-inline-item text-secondary">$15</h6>
+                </div>
+                <!-- Pizza description -->
+                <div class="text-justify text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet metus sit amet nisi finibus,
+                </div>
+              </div>   
           </div>
-          <div class="col-lg-5 ml-auto order-lg-1">
-            <img class="img-fluid" src="img/dog.png" alt="">
+
+          <!-- Mexicana -->
+          <div class="row text-center">
+              
+              <div class="col">
+                <img src="./resources/img/menu-pizza.png" width="90%" height="90%">
+              </div>
+              <div class="col text-left">
+                <div class="list-inline">
+                  <h5 class="list-inline-item text-warning">Pepperoni</h5> 
+                  <h6 class="list-inline-item text-secondary">$15</h6>
+                </div>
+                <!-- Pizza description -->
+                <div class="text-justify text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet metus sit amet nisi finibus,
+                </div>
+              </div>   
           </div>
+
+          </div>
+
+          <div class="col align-self-center">
+
+            <div class="row text-left">
+              <!-- Beverages -->
+              <div class="col">
+                <h3 class="text-warning">Beverages</h3>
+                <div class="list-inline">
+    
+                  <h5 class="list-inline-item">Sodas</h5> 
+                  <h6 class="list-inline-item text-secondary">$4</h6>
+                
+                </div>
+
+                <div class="list-inline">
+    
+                  <h5 class="list-inline-item">Ice Cream Float</h5> 
+                  <h6 class="list-inline-item text-secondary">$7</h6>
+                
+                </div>
+
+                <div class="list-inline">
+                  <h5 class="list-inline-item">Milkshakes</h5> 
+    
+                  <h6 class="list-inline-item text-secondary">$6</h6>
+                
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row text-left">
+
+              <!-- Appetizers -->
+              <div class="col">
+                <h3 class="text-warning">Appetizers</h3>
+
+                <div class="list-inline">
+    
+                  <h5 class="list-inline-item">French Fries</h5> 
+                  <h6 class="list-inline-item text-secondary">$4</h6>
+                
+                </div>
+
+                <div class="list-inline">
+    
+                  <h5 class="list-inline-item">Onion Rings</h5> 
+                  <h6 class="list-inline-item text-secondary">$7</h6>
+                
+                </div>
+
+                <div class="list-inline">
+    
+                  <h5 class="list-inline-item">Carne Asada Fries</h5> 
+                  <h6 class="list-inline-item text-secondary">$8</h6>
+                
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -130,67 +257,21 @@
 
     </section>
     <!-- /.content-section-b -->
-
-    <section class="content-section-a">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-5 ml-auto">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-            <p class="lead">This template features the 'Lato' font, part of the
-              <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
-              <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-          </div>
-          <div class="col-lg-5 mr-auto ">
-            <img class="img-fluid" src="img/phones.png" alt="">
-          </div>
-        </div>
-
-      </div>
-      <!-- /.container -->
-
-    </section>
     <!-- /.content-section-a -->
 
-    <aside class="banner">
+      <div class="container-fluid banner">
 
-      <div class="container">
+        <div class="row h-100">
 
-        <div class="row">
-          <div class="col-lg-6 my-auto">
-            <h2>Connect to Start Bootstrap:</h2>
+          <div class="col align-self-center">
+            <h2>Come for your Chimi Pizza!</h2>
           </div>
-          <div class="col-lg-6 my-auto">
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <span class="network-name">Linkedin</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <div class="col-8 " id="wahizzaLocation"></div>
+        
         </div>
 
       </div>
-      <!-- /.container -->
-
-    </aside>
     <!-- /.banner -->
 
     <!-- Footer -->
@@ -220,7 +301,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>
