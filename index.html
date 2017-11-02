@@ -14,7 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="./css/bootstrap-modal.css" rel="stylesheet"> -->
     <!-- Custom fonts for this template -->
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -62,13 +62,13 @@
             </li>
             
             <li class="nav-item">
-              <a target="_blank" href="https://www.facebook.com/Wahizza/">
+              <a target="_blank" href="https://www.instagram.com/wahizza/">
                 <i class="fa fa-instagram nav-link" aria-hidden="true"></i>
               </a>
             </li>
             
             <li class="nav-item">
-              <a target="_blank" href="https://www.facebook.com/Wahizza/">
+              <a target="_blank" href="https://www.yelp.com/biz/wahizza-new-york">
                 <i class="fa fa-yelp nav-link" aria-hidden="true"></i>
               </a>
             </li>
@@ -243,7 +243,8 @@
           </div>
 
         </div>
-
+        <br>
+        <h3 class="text-center text-secondary">¡Call us now <span class="text-warning"><b>+1 212-837-8088</b></span>!</h3>
       </div>
     </section>
     <!-- /.container -->
@@ -273,12 +274,12 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">  
-                        <h4 class="modal-title text-center">Login with</h4>
+                        <h4 class="text-secondary text-center">Admin</h4>
                         <div class="box">
                              <div class="content">
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="post" action="/login" accept-charset="UTF-8">
+                                    <form method="post" action="services.php" accept-charset="UTF-8">
                                     <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
                                     <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
@@ -308,10 +309,6 @@
       <div class="container">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a  class="text-danger" onclick="openLoginModal();">Login</a>
-          </li>
-          <li class="footer-menu-divider list-inline-item">&sdot;</li>
-          <li class="list-inline-item">
             <a class="text-danger" href="#about">Franchises<a>
           </li>
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
@@ -321,6 +318,10 @@
           <li class="footer-menu-divider list-inline-item">&sdot;</li>
           <li class="list-inline-item">
             <a class="text-danger" href="#contact">Contact</a>
+          </li>
+          <li class="list-inline-item">
+            <li class="footer-menu-divider list-inline-item">&sdot;</li>
+            <a  class="text-danger" onclick="openLoginModal();">Login</a>
           </li>
         </ul>
         <p class="copyright text-muted small">Copyright &copy; Wahizza 2017. All Rights Reserved</p>
