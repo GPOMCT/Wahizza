@@ -55,7 +55,7 @@ function loginAjax(){
         });
     */
     jQuery.ajax({
-      url: './php/login.php',
+      url: '../php/login.php',
       type: 'POST',
       dataType: 'json',
       data: $(this).serialize(),
