@@ -54,29 +54,8 @@ function loginAjax(){
             }
         });
     */
-    jQuery.ajax({
-      url: '../php/login.php',
-      type: 'POST',
-      dataType: 'json',
-      data: $(this).serialize(),
-      beforeSend: function () {
-
-      }
-    })
-    .done(function(respuesta) {
-        console.log("Success");
-    })
-    .fail(function(respuesta) {
-        console.log("Fail");
-        shakeModal();
-    })
-    .always(function(respuesta) {
-        console.log("Complete");
-    });
-    
-
 /*   Simulate error message from the server   */
-     shakeModal();
+     // shakeModal();
 }
 
 

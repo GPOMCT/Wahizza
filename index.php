@@ -1,3 +1,10 @@
+<?php
+  include('./php/login.php'); // Includes Login Script
+
+  if(isset($_SESSION['login_user'])){
+    header("location: profile.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -277,25 +284,13 @@
                              <div class="content">
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="post" action="services.php" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Username" name="Username">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="Password">
-                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <form method="post" action="" accept-charset="UTF-8">
+                                      <input id="email" class="form-control" type="text" placeholder="Username" name="Username">
+                                      <input id="password" class="form-control" type="password" placeholder="Password" name="Password">
+                                      <input class="btn btn-default btn-login" name="submit" type="submit" value="Login">
                                     </form>
                                 </div>
                              </div>
-                        </div>
-                        <div class="box">
-                            <div class="content registerBox" style="display:none;">
-                             <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                                </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
               </div>
